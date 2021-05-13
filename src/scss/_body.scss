@@ -1,0 +1,24 @@
+#ajax-data{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+  .card{
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 768px){
+    #ajax-data{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (max-width: 576px){
+    #ajax-data{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
